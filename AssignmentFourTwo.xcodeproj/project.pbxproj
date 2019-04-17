@@ -12,6 +12,8 @@
 		FB15501C2266F92C00F9636A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB15501A2266F92C00F9636A /* Main.storyboard */; };
 		FB15501E2266F92D00F9636A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB15501D2266F92D00F9636A /* Assets.xcassets */; };
 		FB1550212266F92D00F9636A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB15501F2266F92D00F9636A /* LaunchScreen.storyboard */; };
+		FB9AD0D92266FBBC0005CFEF /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9AD0D82266FBBC0005CFEF /* CoffeeMachine.swift */; };
+		FB9AD0DB2266FBE50005CFEF /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9AD0DA2266FBE50005CFEF /* Drinks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FB15501D2266F92D00F9636A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB1550202266F92D00F9636A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB1550222266F92D00F9636A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB9AD0D82266FBBC0005CFEF /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
+		FB9AD0DA2266FBE50005CFEF /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				FB15501D2266F92D00F9636A /* Assets.xcassets */,
 				FB15501F2266F92D00F9636A /* LaunchScreen.storyboard */,
 				FB1550222266F92D00F9636A /* Info.plist */,
+				FB9AD0D82266FBBC0005CFEF /* CoffeeMachine.swift */,
+				FB9AD0DA2266FBE50005CFEF /* Drinks.swift */,
 			);
 			path = AssignmentFourTwo;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				FB1550192266F92C00F9636A /* ViewController.swift in Sources */,
 				FB1550172266F92C00F9636A /* AppDelegate.swift in Sources */,
+				FB9AD0DB2266FBE50005CFEF /* Drinks.swift in Sources */,
+				FB9AD0D92266FBBC0005CFEF /* CoffeeMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

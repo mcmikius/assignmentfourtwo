@@ -26,6 +26,20 @@ class ViewController: UIViewController {
         print(coffeeMachine.machineResponse)
         coffeeMachine.checkCoffeeMachineState()
         print(coffeeMachine.machineResponse)
+        coffeeMachine.makeLatte()
+        print(coffeeMachine.machineResponse)
+        coffeeMachine.makeAmericanoWithMilk()
+        print(coffeeMachine.machineResponse)
+        coffeeMachine.checkCoffeeMachineState()
+        print(coffeeMachine.machineResponse)
+        coffeeMachine.makeLatte()
+        print(coffeeMachine.machineResponse)
+        coffeeMachine.clearTray()
+        print(coffeeMachine.machineResponse)
+        coffeeMachine.makeAmericanoWithMilk()
+        print(coffeeMachine.machineResponse)
+        coffeeMachine.checkCoffeeMachineState()
+        print(coffeeMachine.machineResponse)
     }
 
 

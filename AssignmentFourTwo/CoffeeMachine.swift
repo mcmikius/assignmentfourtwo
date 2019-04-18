@@ -16,16 +16,21 @@ class CoffeeMachine: NSObject {
     var tray = 0
     
     func addCoffee() {
-        
+        self.amountOfCoffee += 100
     }
     func addWater() {
-        
+        self.amountOfWater += 500
     }
     func addMilk() {
-        
+        self.amountOfMilk += 250
     }
     func clearTray() {
-        
+        if tray == 0 {
+            print("Coffee Machine's tray is clear")
+        } else {
+            print("Need to clean")
+        }
+        tray = 0
     }
 
 }

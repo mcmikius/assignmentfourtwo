@@ -9,9 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let coffeeMachine = CoffeeMachine()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        coffeeMachine.addWater()
+        print(coffeeMachine.machineResponse)
+        coffeeMachine.addMilk()
+        print(coffeeMachine.machineResponse)
+        coffeeMachine.addCoffee()
+        print(coffeeMachine.machineResponse)
+        coffeeMachine.checkCoffeeMachineState()
+        print(coffeeMachine.machineResponse)
+        coffeeMachine.makeEspresso()
+        print(coffeeMachine.machineResponse)
+        coffeeMachine.checkCoffeeMachineState()
+        print(coffeeMachine.machineResponse)
     }
 
 

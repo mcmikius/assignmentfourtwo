@@ -18,7 +18,7 @@ class CoffeeMachine: NSObject {
     var amountOfMilk = 0
     var tray = 0
     var state = false
-    var machineResponse = "Off"
+    var machineResponse = "Coffee Machine Off"
     
     
     func power() {

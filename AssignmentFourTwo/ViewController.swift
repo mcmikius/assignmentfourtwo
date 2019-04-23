@@ -32,6 +32,33 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func showCoffeeMachineState(_ sender: UIButton) {
+        if coffeeMachine.state {
+            coffeeMachine.checkCoffeeMachineState()
+            displayInfo.text = coffeeMachine.machineResponse
+        }
+    }
+    
+    @IBAction func addCoffeeTap(_ sender: UIButton) {
+        if coffeeMachine.state {
+            coffeeMachine.addCoffee()
+            displayInfo.text = coffeeMachine.machineResponse
+        }
+    }
+    
+    @IBAction func addWaterTap(_ sender: UIButton) {
+        if coffeeMachine.state {
+            coffeeMachine.addWater()
+            displayInfo.text = coffeeMachine.machineResponse
+        }
+    }
+    @IBAction func addMilkTap(_ sender: UIButton) {
+        if coffeeMachine.state {
+            coffeeMachine.addMilk()
+            displayInfo.text = coffeeMachine.machineResponse
+        }
+    }
+    
     
     
 }

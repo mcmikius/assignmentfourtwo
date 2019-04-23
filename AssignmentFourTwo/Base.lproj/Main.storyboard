@@ -66,6 +66,9 @@
                                 <state key="normal" title="Check Coffee Machine State">
                                     <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="showCoffeeMachineState:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7M-nW-Y17"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Ingridients" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUW-5R-czJ">
                                 <rect key="frame" x="20" y="550" width="374" height="18"/>
@@ -79,14 +82,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9W-tf-E2C">
                                         <rect key="frame" x="0.0" y="0.0" width="91.5" height="30"/>
                                         <state key="normal" title="Coffee"/>
+                                        <connections>
+                                            <action selector="addCoffeeTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S4s-ok-yPJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVF-wb-D4c">
                                         <rect key="frame" x="141.5" y="0.0" width="91" height="30"/>
                                         <state key="normal" title="Water"/>
+                                        <connections>
+                                            <action selector="addWaterTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H8E-Lb-Lra"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiM-gh-gHc">
                                         <rect key="frame" x="282.5" y="0.0" width="91.5" height="30"/>
                                         <state key="normal" title="Milk"/>
+                                        <connections>
+                                            <action selector="addMilkTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0RC-TL-LfW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

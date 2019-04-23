@@ -10,39 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var displayInfo: UILabel!
+    
     let coffeeMachine = CoffeeMachine()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        coffeeMachine.addWater()
-        print(coffeeMachine.machineResponse)
-        coffeeMachine.addMilk()
-        print(coffeeMachine.machineResponse)
-        coffeeMachine.addCoffee()
-        print(coffeeMachine.machineResponse)
-        coffeeMachine.checkCoffeeMachineState()
-        print(coffeeMachine.machineResponse)
-        coffeeMachine.makeEspresso()
-        print(coffeeMachine.machineResponse)
-        coffeeMachine.checkCoffeeMachineState()
-        print(coffeeMachine.machineResponse)
-        coffeeMachine.makeLatte()
-        print(coffeeMachine.machineResponse)
-        coffeeMachine.makeAmericanoWithMilk()
-        print(coffeeMachine.machineResponse)
-        coffeeMachine.checkCoffeeMachineState()
-        print(coffeeMachine.machineResponse)
-        coffeeMachine.makeLatte()
-        print(coffeeMachine.machineResponse)
-        coffeeMachine.clearTray()
-        print(coffeeMachine.machineResponse)
-        coffeeMachine.makeAmericanoWithMilk()
-        print(coffeeMachine.machineResponse)
-        coffeeMachine.checkCoffeeMachineState()
-        print(coffeeMachine.machineResponse)
+        displayInfo.text = coffeeMachine.machineResponse
+        
     }
+    
 
-
+    @IBAction func powerTap(_ sender: UIButton) {
+        coffeeMachine.power()
+        if !coffeeMachine.state {
+            displayInfo.text = "Coffee Machine Off"
+            
+        } else {
+            displayInfo.text = "Coffee Machine On"
+        }
+    }
+    
     
     
 }

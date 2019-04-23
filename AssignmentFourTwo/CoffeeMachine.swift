@@ -9,7 +9,10 @@
 import UIKit
 import Foundation
 
+
+
 class CoffeeMachine: NSObject {
+    
     var amountOfCoffee = 0
     var amountOfWater = 0
     var amountOfMilk = 0
@@ -18,6 +21,10 @@ class CoffeeMachine: NSObject {
     var machineResponse = "Off"
     
     
+    func power() {
+        state = !state
+        print(state)
+    }
     func addCoffee() {
         self.amountOfCoffee += 100
         machineResponse = "Added 100 mg coffee"

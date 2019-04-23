@@ -36,6 +36,9 @@
                                         <state key="normal" title="Americano With Milk">
                                             <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="makeAmericanoWithMilkTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZy-dF-smg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daE-Qu-gM4">
                                         <rect key="frame" x="0.0" y="47" width="173" height="32"/>
@@ -43,6 +46,9 @@
                                         <state key="normal" title="Americano Without Milk">
                                             <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="makeAmericanoWithoutMilkTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1i-Kr-lj7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXo-Jo-daO">
                                         <rect key="frame" x="0.0" y="94" width="67" height="32"/>
@@ -50,6 +56,9 @@
                                         <state key="normal" title="Espresso">
                                             <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="makeEspressoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9G-Bf-1L6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oG9-Vb-ich">
                                         <rect key="frame" x="0.0" y="141" width="37" height="32"/>
@@ -57,6 +66,9 @@
                                         <state key="normal" title="Latte">
                                             <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="makeLateTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g95-UY-aKa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

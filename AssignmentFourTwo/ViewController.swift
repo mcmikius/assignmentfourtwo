@@ -38,14 +38,12 @@ class ViewController: UIViewController {
             displayInfo.text = coffeeMachine.machineResponse
         }
     }
-    
     @IBAction func addCoffeeTap(_ sender: UIButton) {
         if coffeeMachine.state {
             coffeeMachine.addCoffee()
             displayInfo.text = coffeeMachine.machineResponse
         }
     }
-    
     @IBAction func addWaterTap(_ sender: UIButton) {
         if coffeeMachine.state {
             coffeeMachine.addWater()
@@ -64,6 +62,32 @@ class ViewController: UIViewController {
             displayInfo.text = coffeeMachine.machineResponse
         }
     }
+    
+    @IBAction func makeAmericanoWithMilkTap(_ sender: UIButton) {
+        if coffeeMachine.state {
+            coffeeMachine.makeAmericanoWithMilk()
+            displayInfo.text = coffeeMachine.machineResponse
+        }
+    }
+    @IBAction func makeAmericanoWithoutMilkTap(_ sender: UIButton) {
+        if coffeeMachine.state {
+            coffeeMachine.makeAmericanoWithoutMilk()
+            displayInfo.text = coffeeMachine.machineResponse
+        }
+    }
+    @IBAction func makeEspressoTap(_ sender: UIButton) {
+        if coffeeMachine.state {
+            coffeeMachine.makeEspresso()
+            displayInfo.text = coffeeMachine.machineResponse
+        }
+    }
+    @IBAction func makeLateTap(_ sender: UIButton) {
+        if coffeeMachine.state {
+            coffeeMachine.makeLatte()
+            displayInfo.text = coffeeMachine.machineResponse
+        }
+    }
+    
     
     
     

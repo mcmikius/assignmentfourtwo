@@ -58,6 +58,12 @@ class ViewController: UIViewController {
             displayInfo.text = coffeeMachine.machineResponse
         }
     }
+    @IBAction func clearTrayTap(_ sender: UIButton) {
+        if coffeeMachine.state {
+            coffeeMachine.clearTray()
+            displayInfo.text = coffeeMachine.machineResponse
+        }
+    }
     
     
     

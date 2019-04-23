@@ -112,6 +112,9 @@
                                 <state key="normal" title="Clear Tray">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearTrayTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FLJ-KH-DKp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsx-HB-ZoR">
                                 <rect key="frame" x="127" y="720" width="160" height="32"/>

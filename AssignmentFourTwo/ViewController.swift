@@ -12,13 +12,34 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var displayInfo: UILabel!
     
+    @IBOutlet weak var americanoWithMilkButton: UIButton!
+    @IBOutlet weak var americanoWithoutMilkButton: UIButton!
+    @IBOutlet weak var espressoButton: UIButton!
+    @IBOutlet weak var latteButton: UIButton!
+    @IBOutlet weak var checkCoffeeMachineStateButton: UIButton!
+    @IBOutlet weak var addCoffeeButton: UIButton!
+    @IBOutlet weak var addWaterButton: UIButton!
+    @IBOutlet weak var addMilkButton: UIButton!
+    @IBOutlet weak var clearTrayButton: UIButton!
+    
+    
     let coffeeMachine = CoffeeMachine()
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        displayInfo.text = coffeeMachine.machineResponse
         
+        displayInfo.text = coffeeMachine.machineResponse
+        americanoWithMilkButton.isEnabled = false
+        americanoWithoutMilkButton.isEnabled = false
+        espressoButton.isEnabled = false
+        latteButton.isEnabled = false
+        checkCoffeeMachineStateButton.isEnabled = false
+        addCoffeeButton.isEnabled = false
+        addMilkButton.isEnabled = false
+        addWaterButton.isEnabled = false
+        clearTrayButton.isEnabled = false
     }
     
 
@@ -26,9 +47,26 @@ class ViewController: UIViewController {
         coffeeMachine.power()
         if !coffeeMachine.state {
             displayInfo.text = "Coffee Machine Off"
-            
+            americanoWithMilkButton.isEnabled = false
+            americanoWithoutMilkButton.isEnabled = false
+            espressoButton.isEnabled = false
+            latteButton.isEnabled = false
+            checkCoffeeMachineStateButton.isEnabled = false
+            addCoffeeButton.isEnabled = false
+            addMilkButton.isEnabled = false
+            addWaterButton.isEnabled = false
+            clearTrayButton.isEnabled = false
         } else {
             displayInfo.text = "Coffee Machine On"
+            americanoWithMilkButton.isEnabled = true
+            americanoWithoutMilkButton.isEnabled = true
+            espressoButton.isEnabled = true
+            latteButton.isEnabled = true
+            checkCoffeeMachineStateButton.isEnabled = true
+            addCoffeeButton.isEnabled = true
+            addMilkButton.isEnabled = true
+            addWaterButton.isEnabled = true
+            clearTrayButton.isEnabled = true
         }
     }
     

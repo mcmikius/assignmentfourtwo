@@ -100,5 +100,22 @@ class CoffeeMachine: NSObject {
             machineResponse = "Your americano with milk is ready!"
         }
     }
+    func makeAmericanoWithoutMilk() {
+        if amountOfWater < 100 {
+            machineResponse = "Not enough water"
+        }
+        if amountOfCoffee < 20 {
+            machineResponse = "Not enough coffee"
+        }
+        if tray >= 50 {
+            machineResponse = "waste tray full"
+        }
+        if amountOfWater >= 100 && amountOfCoffee >= 20 && amountOfMilk >= 50 && tray <= 45 {
+            amountOfWater -= 100
+            amountOfCoffee -= 20
+            tray += 20
+            machineResponse = "Your americano without milk is ready!"
+        }
+    }
 
 }

@@ -40,6 +40,10 @@ class ViewController: UIViewController {
         print(coffeeMachine.machineResponse)
         coffeeMachine.checkCoffeeMachineState()
         print(coffeeMachine.machineResponse)
+        coffeeMachine.makeAmericanoWithMilk()
+        print(coffeeMachine.machineResponse)
+        coffeeMachine.checkCoffeeMachineState()
+        print(coffeeMachine.machineResponse)
     }
 
 
